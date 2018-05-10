@@ -2,28 +2,121 @@
 <head>
       <title>Go LNG</title>
       <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src="js/jquiery.min.js"></script>
+     
 </head>
 
 <body>
-  <!-- //landing home page -->
-      <section class="intro"> 
-        <div class="inner">
-          <div class="content">
-            <h1>GO LNG</h1>
-            <!-- link for login page -->
-            <a class="btn" href="#">JOIN US</a>  
+  <div class="wrapper">
+      <header>
+        <nav>
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
           </div>
-        </div>
-      </section>
-    <p>
-      <!-- website description/how it works -->
-      connecting stakeholders..Liquefied natural gas (LNG) is natural gas (predominantly methane, CH4, with some mixture of ethane C2H6) that has been converted to liquid form for ease and safety of non-pressurized storage or transport. It takes up about 1/600th the volume of natural gas in the gaseous state (at standard conditions for temperature and pressure). It is odorless, colorless, non-toxic and non-corrosive. Hazards include flammability after vaporization into a gaseous state, freezing and asphyxia. The liquefaction process involves removal of certain components, such as dust, acid gases, helium, water, and heavy hydrocarbons, which could cause difficulty downstream. The natural gas is then condensed into a liquid at close to atmospheric pressure by cooling it to approximately −162 °C (−260 °F); maximum transport pressure is set at around 25 kPa (4 psi).
-    </p> <br>   
-    <p>
-      <!-- about lng usage -->
-      Liquefied natural gas (LNG) is natural gas (predominantly methane, CH4, with some mixture of ethane C2H6) that has been converted to liquid form for ease and safety of non-pressurized storage or transport. It takes up about 1/600th the volume of natural gas in the gaseous state (at standard conditions for temperature and pressure). It is odorless, colorless, non-toxic and non-corrosive. Hazards include flammability after vaporization into a gaseous state, freezing and asphyxia. The liquefaction process involves removal of certain components, such as dust, acid gases, helium, water, and heavy hydrocarbons, which could cause difficulty downstream. The natural gas is then condensed into a liquid at close to atmospheric pressure by cooling it to approximately −162 °C (−260 °F); maximum transport pressure is set at around 25 kPa (4 psi).
-    </p>
+<!-- lng photo as LOGO -->
+          <div class="logo">
+            LOGO
+          </div>
 
+          <div class="menu">
+            <ul>
+              <!-- <li><a href="#">Home</a></li> -->
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="golng">
+          <h1>GO LNG</h1>
+          <a class="btn" href="#loginsection">JOIN US</a>  
+        </div>  
+
+      </header>
+  <!-- //landing home page --> 
+        <section class= "usermember">
+        <div class="usermemberdesign" id="loginsection">
+        <div class="spacebtn">
+
+            <h4>LOGIN AS USER OR MEMBER</h4>
+            <!-- link for login page -->
+            
+            <button onclick="document.getElementById('id01').style.display='block'" class="btn" style="width:auto;">USER</button><!-- user ogin button -->
+            
+            <!-- pop up login form for user -->
+            
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="AVATAR.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">dont have account? <a href="signupuser.html">signup</a></span>
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <!-- member login button -->
+            <button onclick="document.getElementById('id02').style.display='block'" class="btn" style="width:auto;">MEMBER</button> 
+            <!-- pop up login form for member -->
+
+            <div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page2.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="AVATAR.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">dont have account? <a href="signupmem.html">signup</a></span>
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+       </div>
+       </div>
+       </div>
+      </section> 
+      <script type="text/javascript"
+          src = "js/popup.js">
+      </script> 
+     
 
 </body>
 </html>
